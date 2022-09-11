@@ -6,16 +6,14 @@ const CardNumber = () => {
   const number = useSelector((state) => state.cardNumber.value);
   const formattedNumber = formatNum(number);
   return (
-    <>
-      <span
-        className={clsx(
-          "font-light text-[1.3rem] sm:text-2xl text-white",
-          "tracking-widest mt-auto mb-4"
-        )}
-      >
-        {formattedNumber}
-      </span>
-    </>
+    <span
+      className={clsx(
+        "font-light text-[1.3rem] sm:text-2xl text-white",
+        "tracking-widest mt-auto mb-4"
+      )}
+    >
+      {formattedNumber}
+    </span>
   );
 };
 

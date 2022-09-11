@@ -1,11 +1,11 @@
-import FirstCard from "./FirstCard";
-import SecondCard from "./SecondCard";
+import CardFront from "./CardFront";
+import CardBack from "./CardBack";
 
 export default function App() {
   return (
     <div>
-      <FirstCard />
-      <SecondCard />
+      <CardFront />
+      <CardBack />
     </div>
   );
 }

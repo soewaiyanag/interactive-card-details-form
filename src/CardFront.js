@@ -4,7 +4,7 @@ import CardNumber from "./CardNumber";
 import CardHolder from "./CardHolder";
 import ExpDate from "./ExpDate";
 
-const FirstCard = () => {
+const CardFront = () => {
   return (
     <div
       className={clsx(
@@ -22,4 +22,4 @@ const FirstCard = () => {
   );
 };
 
-export default FirstCard;
+export default CardFront;
