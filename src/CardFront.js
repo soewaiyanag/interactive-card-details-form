@@ -6,12 +6,7 @@ import ExpDate from "./ExpDate";
 
 const CardFront = () => {
   return (
-    <div
-      className={clsx(
-        "card bg-card-front ",
-        "rounded-lg bg-cover flex flex-col"
-      )}
-    >
+    <div className={clsx("card bg-card-front ", "flex flex-col")}>
       <img className="w-16 sm:w-18" src={cardLogo} alt="card-logo" />
       <CardNumber />
       <div className="flex justify-between">
