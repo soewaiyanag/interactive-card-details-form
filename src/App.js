@@ -1,7 +1,11 @@
+import FirstCard from "./FirstCard";
+import SecondCard from "./SecondCard";
+
 export default function App() {
   return (
     <div>
-      <h1 className="text-center">App</h1>
+      <FirstCard />
+      <SecondCard />
     </div>
   );
 }

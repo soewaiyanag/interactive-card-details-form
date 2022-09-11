@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Space Grotesk", sans-serif;
+  }
+  :root {
+    @apply text-lg;
+  }
+}
+
+.card {
+  @apply w-84 sm:w-96 aspect-video px-8 py-5;
+}
+
+.card-small-text {
+  @apply text-white text-xs tracking-widest;
+}
