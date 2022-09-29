@@ -1,5 +1,9 @@
 function formatNum(value) {
-  return value.match(/.{1,4}/g).join(" ");
+  try {
+    return value.match(/.{1,4}/g).join(" ");
+  } catch (TypeError) {
+    return "";
+  }
 }
 
 export default formatNum;

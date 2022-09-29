@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  value: "0".repeat(16),
+  value: "",
 };
 
 export const cardNumberSlice = createSlice({
@@ -9,7 +9,7 @@ export const cardNumberSlice = createSlice({
   initialState,
   reducers: {
     update: (state, action) => {
-      state.value = action.payload;
+      state.value = action.payload.value;
     },
   },
 });
