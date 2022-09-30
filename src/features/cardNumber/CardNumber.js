@@ -2,7 +2,6 @@ import clsx from "clsx";
 import { useSelector, useDispatch } from "react-redux";
 import formatNum from "functions/formatNum";
 import { update } from "./cardNumberSlice";
-import fixNumber from "functions/fixNumber";
 
 const allZero = "0".repeat(16);
 

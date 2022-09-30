@@ -9,7 +9,7 @@ export const cardHolderSlice = createSlice({
   initialState,
   reducers: {
     update: (state, action) => {
-      state.name = action.payload;
+      state.name = action.payload.value;
     },
   },
 });
