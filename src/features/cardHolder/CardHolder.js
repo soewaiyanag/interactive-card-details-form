@@ -14,18 +14,18 @@ export const CardHolderInput = () => {
   const dispatch = useDispatch();
   return (
     <div>
-      <label htmlFor="cardNumber" className="uppercase">
+      <label htmlFor="cardHolder" className="uppercase">
         cardholder name
       </label>
       <input
         onChange={(e) => {
           dispatch(update({ value: e.target.value }));
         }}
-        className="border border-black rounded-md py-2 px-4"
+        className="input"
         placeholder={"e.g. " + placeHolderName}
         type="text"
-        name="cardNumber"
-        id="cardNumber"
+        name="cardHolder"
+        id="cardHolder"
       />
     </div>
   );

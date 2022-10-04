@@ -1,5 +1,6 @@
 import { CardHolderInput } from "features/cardHolder/CardHolder";
 import { CardNumberInput } from "features/cardNumber/CardNumber";
+import { ExpDateInput } from "features/expDate/ExpDate";
 
 const SecondSection = () => {
   return (
@@ -7,6 +8,7 @@ const SecondSection = () => {
       <form className="mt-32 px-5 flex flex-col">
         <CardHolderInput />
         <CardNumberInput />
+        <ExpDateInput />
       </form>
     </div>
   );

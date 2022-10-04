@@ -34,7 +34,7 @@ export const CardNumberInput = () => {
           dispatch(update({ value: e.target.value }));
         }}
         maxLength="16"
-        className="border border-black rounded-md py-2 px-4"
+        className="input"
         placeholder="e.g. 1234 5678 9123 0000"
         value={number}
         type="text"

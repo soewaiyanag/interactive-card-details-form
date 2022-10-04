@@ -1,8 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  month: "",
-  year: "",
+  month: "00",
+  year: "00",
 };
 
 export const expDateSlice = createSlice({
