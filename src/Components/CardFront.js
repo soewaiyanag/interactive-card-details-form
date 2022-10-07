@@ -9,7 +9,7 @@ const CardFront = () => {
       <img className="w-16 sm:w-18" src={cardLogo} alt="card-logo" />
       <CardNumber />
       <div className="flex justify-between">
-        <CardHolder />
+        <CardHolder placeHolderName="Jane Appleseed" />
         <ExpDate />
       </div>
     </div>

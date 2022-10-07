@@ -1,8 +1,7 @@
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import clsx from "clsx";
-import { update } from "./cardNumberSlice";
+
 import formatNum from "functions/formatNum";
-import Input from "Components/Input";
 
 const allZero = "0".repeat(16);
 
@@ -18,31 +17,6 @@ const CardNumber = () => {
     >
       {formattedNumber}
     </span>
-  );
-};
-
-export const CardNumberInput = () => {
-  const dispatch = useDispatch();
-  const number = useSelector((state) => state.cardNumber.value);
-
-  return (
-    <div>
-      <label htmlFor="cardNumber" className="uppercase">
-        card number
-      </label>
-      <Input
-        onChange={(e) => {
-          dispatch(update({ value: e.target.value }));
-        }}
-        maxLength="16"
-        className="input"
-        placeholder="e.g. 1234 5678 9123 0000"
-        value={number}
-        type="text"
-        name="cardNumber"
-        id="cardNumber"
-      />
-    </div>
   );
 };
 

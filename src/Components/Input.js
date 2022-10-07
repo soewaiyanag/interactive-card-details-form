@@ -1,6 +1,9 @@
 const Input = ({ children, ...props }) => {
   return (
-    <input {...props} className="border border-black rounded-md py-2 px-4">
+    <input
+      {...props}
+      className="border border-black rounded-md py-2 px-4 w-full"
+    >
       {children}
     </input>
   );
