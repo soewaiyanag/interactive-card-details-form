@@ -11,10 +11,6 @@
   }
 }
 
-.input {
-  @apply border border-black rounded-md py-2 px-4;
-}
-
 .card {
   @apply w-84 sm:w-96 aspect-video rounded-lg
           bg-cover px-8 py-5 shadow-lg;

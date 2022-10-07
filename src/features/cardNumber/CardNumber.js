@@ -1,7 +1,8 @@
-import clsx from "clsx";
 import { useSelector, useDispatch } from "react-redux";
-import formatNum from "functions/formatNum";
+import clsx from "clsx";
 import { update } from "./cardNumberSlice";
+import formatNum from "functions/formatNum";
+import Input from "Components/Input";
 
 const allZero = "0".repeat(16);
 
@@ -29,7 +30,7 @@ export const CardNumberInput = () => {
       <label htmlFor="cardNumber" className="uppercase">
         card number
       </label>
-      <input
+      <Input
         onChange={(e) => {
           dispatch(update({ value: e.target.value }));
         }}

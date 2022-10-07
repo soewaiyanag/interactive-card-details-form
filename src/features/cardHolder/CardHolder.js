@@ -1,5 +1,6 @@
 import { useSelector, useDispatch } from "react-redux";
 import { update } from "./cardHolderSlice";
+import Input from "Components/Input";
 
 const placeHolderName = "Jane Appleseed";
 
@@ -17,7 +18,7 @@ export const CardHolderInput = () => {
       <label htmlFor="cardHolder" className="uppercase">
         cardholder name
       </label>
-      <input
+      <Input
         onChange={(e) => {
           dispatch(update({ value: e.target.value }));
         }}

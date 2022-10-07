@@ -2,10 +2,10 @@ import clamp from "functions/clamp";
 import formatTo2Digits from "functions/formatTo2Digits";
 import { useDispatch, useSelector } from "react-redux";
 import { updateMonth } from "./expDateSlice";
+import Input from "Components/Input";
 
 const ExpDate = () => {
   const date = useSelector((state) => state.expDate);
-  console.log(date);
   const month = date.month || "00";
   const year = date.year || "00";
   return <span className="card-small-text">{month + "/" + year}</span>;
@@ -19,7 +19,7 @@ export const ExpDateInput = () => {
   return (
     <div>
       <p htmlFor="expDate">EXP. DATE(MM/YY)</p>
-      <input
+      <Input
         min={0}
         max={12}
         onChange={(e) => {
@@ -27,7 +27,6 @@ export const ExpDateInput = () => {
           const formattedMonth = formatTo2Digits(clampedMonth);
           dispatch(updateMonth({ month: formattedMonth }));
         }}
-        className="input"
         placeholder="MM"
         type="number"
         value={value}
