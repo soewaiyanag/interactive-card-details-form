@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import clamp from "functions/clamp";
 import formatTo2Digits from "functions/formatTo2Digits";
 
-const NumberInput = ({ min, max, action, name, placeholder }) => {
+const NumberInput = ({ min, max, id, action, name, placeholder }) => {
   const dispatch = useDispatch();
   const stateValue = useSelector((state) => state.expDate[name]);
   const value = stateValue === "00" ? "" : stateValue;
@@ -20,6 +20,7 @@ const NumberInput = ({ min, max, action, name, placeholder }) => {
       className="input text-center"
       onChange={onChangeHandler}
       value={value}
+      id={id}
     />
   );
 };
