@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
 import { update } from "./cardNumberSlice";
-import Input from "Components/Input";
 
 const CardNumberInput = () => {
   const dispatch = useDispatch();
@@ -10,10 +9,10 @@ const CardNumberInput = () => {
   };
 
   return (
-    <Input
+    <input
+      className="input"
       onChange={setValue}
       maxLength="16"
-      className="input"
       placeholder="e.g. 1234 5678 9123 0000"
       value={number}
       type="text"
