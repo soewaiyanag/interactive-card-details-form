@@ -9,10 +9,10 @@ const YearInput = () => {
     <NumberInput
       min={min}
       max={max}
-      action={updateYear}
       placeholder="YY"
       name="year"
       id="yearInput"
+      action={updateYear}
     />
   );
 };

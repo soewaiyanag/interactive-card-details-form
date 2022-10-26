@@ -1,5 +1,6 @@
 import CardHolderInput from "features/cardHolder/CardHolderInput";
 import CardNumberInput from "features/cardNumber/CardNumberInput";
+import CvcInput from "features/cvc/CvcInput";
 import ExpDateInput from "features/expDate/ExpDateInput";
 import Label from "./Label";
 
@@ -16,7 +17,10 @@ const SecondSection = () => {
           <Label htmlFor="monthInput">MM</Label>/
           <Label htmlFor="yearInput">YY</Label>)
         </p>
-        <ExpDateInput />
+        <div className="flex gap-4">
+          <ExpDateInput />
+          <CvcInput />
+        </div>
       </form>
     </div>
   );

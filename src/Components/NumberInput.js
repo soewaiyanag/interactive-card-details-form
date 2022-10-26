@@ -17,7 +17,7 @@ const NumberInput = ({ min, max, id, action, name, placeholder }) => {
     <input
       placeholder={placeholder}
       type="number"
-      className="input text-center"
+      className="input"
       onChange={onChangeHandler}
       value={value}
       id={id}

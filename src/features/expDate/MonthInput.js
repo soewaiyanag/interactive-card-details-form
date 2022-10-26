@@ -9,10 +9,10 @@ const MonthInput = () => {
     <NumberInput
       min={min}
       max={max}
-      action={updateMonth}
       placeholder="MM"
       name="month"
       id="monthInput"
+      action={updateMonth}
     />
   );
 };
