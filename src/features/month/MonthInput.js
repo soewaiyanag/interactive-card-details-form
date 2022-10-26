@@ -1,5 +1,5 @@
 import NumberInput from "Components/NumberInput";
-import { updateMonth } from "./expDateSlice";
+import { update } from "./monthSlice";
 
 const MonthInput = () => {
   const min = 0;
@@ -12,7 +12,7 @@ const MonthInput = () => {
       placeholder="MM"
       name="month"
       id="monthInput"
-      action={updateMonth}
+      action={update}
     />
   );
 };

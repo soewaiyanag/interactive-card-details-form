@@ -3,7 +3,7 @@ import { update } from "./cvcSlice";
 
 const CvcInput = () => {
   const min = 0;
-  const max = 99;
+  const max = 999;
 
   return (
     <NumberInput

@@ -1,5 +1,5 @@
 import NumberInput from "Components/NumberInput";
-import { updateYear } from "./expDateSlice";
+import { update } from "./yearSlice";
 
 const YearInput = () => {
   const min = 0;
@@ -12,7 +12,7 @@ const YearInput = () => {
       placeholder="YY"
       name="year"
       id="yearInput"
-      action={updateYear}
+      action={update}
     />
   );
 };
