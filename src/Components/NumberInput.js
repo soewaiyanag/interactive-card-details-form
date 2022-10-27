@@ -6,7 +6,19 @@ import formatTo2Digits from "functions/formatTo2Digits";
 const NumberInput = ({ min, max, id, action, name, placeholder }) => {
   const dispatch = useDispatch();
   const stateValue = useSelector((state) => state[name].value);
-  const value = stateValue === "00" ? "" : stateValue;
+
+  /* use of ref: I could easily use props for originalValue/
+   but it would be difficult to maintain because it would be/
+   two original values: one from props and/
+   one from initialState from Slice./
+   Therefore, I want to save value from initialState and use Ref */
+  const originalValueRef = useRef(null);
+  /* if the value is null, change the value to stateValue which/
+  is the value of initialState */
+  originalValueRef.current = originalValueRef.current ?? stateValue;
+  /* then assign it to variable below */
+  const originalValue = originalValueRef.current;
+  const value = stateValue === originalValue ? "" : stateValue;
 
   const onChangeHandler = (event) => {
     const clampedValue = clamp(event.target.value, min, max);

@@ -1,5 +1,5 @@
-import MonthInput from "../month/MonthInput";
-import YearInput from "../year/YearInput";
+import MonthInput from "../features/month/MonthInput";
+import YearInput from "../features/year/YearInput";
 
 const ExpDateInput = () => {
   return (
