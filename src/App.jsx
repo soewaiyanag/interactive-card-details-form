@@ -1,5 +1,5 @@
-import FirstSection from "./Components/FirstSection";
-import SecondSection from "./Components/SecondSection";
+import FirstSection from "components/FirstSection";
+import SecondSection from "components/SecondSection";
 
 export default function App() {
   return (

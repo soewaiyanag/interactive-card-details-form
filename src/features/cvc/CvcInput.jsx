@@ -1,4 +1,4 @@
-import NumberInput from "Components/NumberInput";
+import NumberInput from "components/NumberInput";
 import { update } from "./cvcSlice";
 
 const CvcInput = () => {

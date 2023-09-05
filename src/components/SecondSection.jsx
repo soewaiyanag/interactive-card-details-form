@@ -1,7 +1,7 @@
 import CardHolderInput from "features/cardHolder/CardHolderInput";
 import CardNumberInput from "features/cardNumber/CardNumberInput";
 import CvcInput from "features/cvc/CvcInput";
-import ExpDateInput from "Components/ExpDateInput";
+import ExpDateInput from "components/ExpDateInput";
 import Label from "./Label";
 
 const SecondSection = () => {

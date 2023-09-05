@@ -1,7 +1,7 @@
 import cardLogo from "images/card-logo.svg";
 import CardNumber from "features/cardNumber/CardNumber";
 import CardHolder from "features/cardHolder/CardHolder";
-import ExpDate from "Components/ExpDate";
+import ExpDate from "components/ExpDate";
 
 const CardFront = () => {
   return (
