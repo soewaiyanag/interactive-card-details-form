@@ -7,11 +7,11 @@ import ConfirmBtn from "components/CreditCardForm/ConfirmBtn";
 
 const SecondSection = () => {
   return (
-    <div className="sm:container">
+    <div className="md:max-w-md">
       <form className="mt-32 px-5 flex flex-col">
-        <Label htmlFor="cardHolder">cardholder name</Label>
+        <Label htmlFor="card_holder">cardholder name</Label>
         <CardHolderInput placeholderName="Jane Appleseed" />
-        <Label htmlFor={"cardNumber"}>card number</Label>
+        <Label htmlFor={"card_number"}>card number</Label>
         <CardNumberInput />
         <p>
           EXP. DATE(
