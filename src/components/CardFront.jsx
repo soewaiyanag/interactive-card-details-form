@@ -6,7 +6,7 @@ import ExpDate from "components/ExpDate";
 const CardFront = () => {
   return (
     <div className="card bg-card-front flex flex-col">
-      <img className="w-16 sm:w-18" src={cardLogo} alt="card-logo" />
+      <img className="w-12 xs:w-16 sm:w-18" src={cardLogo} alt="card-logo" />
       <CardNumber />
       <div className="flex justify-between">
         <CardHolder placeHolderName="Jane Appleseed" />
