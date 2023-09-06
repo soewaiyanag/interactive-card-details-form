@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+# have to ignore test.ts because that file is unnecessary for the project and adding it fix error in the jsconfig.json file
+/src/test.ts
+
 # testing
 /coverage
 
