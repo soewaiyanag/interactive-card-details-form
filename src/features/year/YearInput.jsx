@@ -1,4 +1,4 @@
-import NumberInput from "components/NumberInput";
+import NumberInput from "components/CreditCardForm/NumberInput";
 import { update } from "./yearSlice";
 
 const YearInput = () => {

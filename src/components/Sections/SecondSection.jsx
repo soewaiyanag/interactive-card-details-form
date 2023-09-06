@@ -1,8 +1,9 @@
 import CardHolderInput from "features/cardHolder/CardHolderInput";
 import CardNumberInput from "features/cardNumber/CardNumberInput";
 import CvcInput from "features/cvc/CvcInput";
-import ExpDateInput from "components/ExpDateInput";
-import Label from "./Label";
+import ExpDateInput from "components/CreditCardForm/ExpDateInput";
+import Label from "components/CreditCardForm/Label";
+import ConfirmBtn from "components/CreditCardForm/ConfirmBtn";
 
 const SecondSection = () => {
   return (
@@ -21,6 +22,7 @@ const SecondSection = () => {
           <ExpDateInput />
           <CvcInput />
         </div>
+        <ConfirmBtn />
       </form>
     </div>
   );

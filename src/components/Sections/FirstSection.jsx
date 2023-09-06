@@ -1,5 +1,5 @@
-import CardFront from "./CardFront";
-import CardBack from "./CardBack";
+import CardFront from "components/CreditCard/CreditCardFront";
+import CardBack from "components/CreditCard/CreditCardBack";
 import clsx from "clsx";
 
 const FirstSection = () => {
