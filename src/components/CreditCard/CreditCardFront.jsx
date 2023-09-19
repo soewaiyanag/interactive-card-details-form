@@ -1,9 +1,9 @@
-import cardLogo from "images/card-logo.svg";
-import CardNumber from "features/cardNumber/CardNumber";
-import CardHolder from "features/cardHolder/CardHolder";
-import ExpDate from "components/CreditCardForm/ExpDate";
+import cardLogo from "@/images/card-logo.svg";
+import CardNumber from "@/features/cardNumber/CardNumber";
+import CardHolder from "@/features/cardHolder/CardHolder";
+import ExpDate from "@/components/CreditCardForm/ExpDate";
 
-const CardFront = () => {
+const CreditCardFront = () => {
   return (
     <div className="card bg-card-front flex flex-col">
       <img className="w-12 xs:w-16 sm:w-18" src={cardLogo} alt="card-logo" />
@@ -16,4 +16,4 @@ const CardFront = () => {
   );
 };
 
-export default CardFront;
+export default CreditCardFront;
