@@ -9,7 +9,7 @@ export default function App() {
       <MainBackground />
       <div
         className={clsx(
-          "grid grid-rows-[auto_1fr]",
+          "grid grid-rows-[auto_1fr] sm:container",
           "lg:grid-cols-2 lg:gap-4 lg:min-h-screen lg:grid-rows-none"
         )}
       >

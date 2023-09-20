@@ -1,5 +1,5 @@
 import CreditCardFront from "@/components/CreditCard/CreditCardFront";
-import CardBack from "@/components/CreditCard/CreditCardBack";
+import CreditCardBack from "@/components/CreditCard/CreditCardBack";
 import clsx from "clsx";
 
 const mobileCardFrontPosition = "left-4 top-1/2";
@@ -16,8 +16,8 @@ const FirstSection = () => {
         <div
           className={clsx(
             mobileCardFrontPosition,
-            "absolute z-10",
-            "lg:relative lg:translate-x-1/4 lg:left-0 lg:top-0"
+            "absolute z-10 w-fit",
+            "lg:relative lg:translate-x-1/4 lg:top-0 lg:left-4"
           )}
         >
           <CreditCardFront />
@@ -25,11 +25,11 @@ const FirstSection = () => {
         <div
           className={clsx(
             mobileCardBackPosition,
-            "absolute",
-            "lg:relative lg:translate-x-1/3 lg:top-0 lg:right-0"
+            "absolute w-fit",
+            "lg:relative lg:translate-x-1/3 lg:top-0 lg:left-16"
           )}
         >
-          <CardBack />
+          <CreditCardBack />
         </div>
       </div>
     </div>
