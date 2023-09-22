@@ -5,12 +5,12 @@ import clsx from "clsx";
 
 export default function App() {
   return (
-    <div className="relative lg:min-h-screen overflow-hidden">
+    <div className="relative xl:min-h-screen overflow-hidden">
       <MainBackground />
       <div
         className={clsx(
-          "grid grid-rows-[auto_1fr] sm:container",
-          "lg:grid-cols-2 lg:gap-4 lg:min-h-screen lg:grid-rows-none"
+          "grid grid-rows-[auto_1fr] sm:container xl:container-fluid mx-auto px-4",
+          "xl:grid-cols-2 xl:gap-4 xl:min-h-screen xl:grid-rows-none"
         )}
       >
         <FirstSection />

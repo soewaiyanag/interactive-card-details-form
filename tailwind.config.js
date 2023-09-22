@@ -1,14 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 const defaultTheme = require("tailwindcss/defaultTheme");
 export default {
+  corePlugins: {
+    container: false,
+  },
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
       xs: "445px",
       ...defaultTheme.screens,
-    },
-    container: {
-      center: true,
     },
     extend: {
       spacing: {
@@ -36,5 +36,25 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addComponents }) {
+      addComponents({
+        ".container": {
+          maxWidth: "100%",
+          "@screen sm": {
+            maxWidth: "640px",
+          },
+          "@screen md": {
+            maxWidth: "768px",
+          },
+          "@screen lg": {
+            maxWidth: "768px",
+          },
+          "@screen xl": {
+            maxWidth: "1280px",
+          },
+        },
+      });
+    },
+  ],
 };
