@@ -5,7 +5,7 @@ import ExpDate from "@/components/CreditCardForm/ExpDate";
 
 const CreditCardFront = () => {
   return (
-    <div className="card bg-card-front flex flex-col">
+    <div className="card bg-card-front flex flex-col relative">
       <img className="w-12 xs:w-16 sm:w-18" src={cardLogo} alt="card-logo" />
       <CardNumber />
       <div className="flex justify-between">

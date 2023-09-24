@@ -28,12 +28,12 @@
   }
 
   .card {
-    @apply w-72 xs:w-84 sm:w-88 aspect-video rounded-lg 
+    @apply w-full sm:w-88 aspect-video rounded-lg 
             bg-cover px-8 py-5 shadow-lg;
   }
 
   .card-small-text {
-    @apply text-white text-xs tracking-widest;
+    @apply text-white tracking-widest text-xs;
   }
 
   .container-fluid {
