@@ -8,19 +8,28 @@ import ConfirmBtn from "components/CreditCardForm/ConfirmBtn";
 const SecondSection = () => {
   return (
     <div className="xl:max-w-md self-center">
-      <form className="mt-32 px-5 flex flex-col xl:mt-0">
-        <Label htmlFor="card_holder">cardholder name</Label>
-        <CardHolderInput placeholderName="Jane Appleseed" />
-        <Label htmlFor={"card_number"}>card number</Label>
-        <CardNumberInput />
-        <p>
-          EXP. DATE(
-          <Label htmlFor="monthInput">MM</Label>/
-          <Label htmlFor="yearInput">YY</Label>)
-        </p>
+      <form className="mt-32 px-5 flex flex-col gap-4 xl:mt-0">
+        <div>
+          <Label htmlFor="cardHolder">cardholder name</Label>
+          <CardHolderInput placeholderName="Jane Appleseed" />
+        </div>
+        <div>
+          <Label htmlFor={"cardNumber"}>card number</Label>
+          <CardNumberInput />
+        </div>
         <div className="flex gap-4">
-          <ExpDateInput />
-          <CvcInput />
+          <div>
+            <p>
+              EXP. DATE(
+              <Label htmlFor="monthInput">MM</Label>/
+              <Label htmlFor="yearInput">YY</Label>)
+            </p>
+            <ExpDateInput />
+          </div>
+          <div>
+            <Label htmlFor="cvcInput">cvc</Label>
+            <CvcInput />
+          </div>
         </div>
         <ConfirmBtn />
       </form>
