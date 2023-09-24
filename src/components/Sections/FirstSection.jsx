@@ -17,7 +17,7 @@ const FirstSection = () => {
           className={clsx(
             mobileCardFrontPosition,
             "absolute z-10 w-fit",
-            "xl:relative xl:translate-x-1/4 xl:top-0 xl:left-4"
+            "xl:relative xl:translate-x-1/4 xl:top-0 xl:left-[calc(100%-calc(20vw+18rem))]"
           )}
         >
           <CreditCardFront />
@@ -26,7 +26,7 @@ const FirstSection = () => {
           className={clsx(
             mobileCardBackPosition,
             "absolute w-fit",
-            "xl:relative xl:translate-x-1/3 xl:top-0 xl:left-16"
+            "xl:relative xl:translate-x-1/3 xl:top-0 xl:left-[calc(100%-calc(20vw+15rem))]"
           )}
         >
           <CreditCardBack />
