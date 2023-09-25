@@ -28,7 +28,7 @@
   }
 
   .card {
-    @apply w-full sm:w-88 aspect-video rounded-lg 
+    @apply w-full md:w-88 aspect-video rounded-lg 
             bg-cover px-8 py-5 shadow-lg;
   }
 

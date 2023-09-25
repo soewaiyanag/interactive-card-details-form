@@ -15,7 +15,8 @@ const FirstSection = () => {
         <div
           className={clsx(
             "z-10",
-            "col-start-1 col-end-7 row-start-2",
+            "col-start-1 col-end-[-1] row-start-2",
+            "xxs:col-start-1 xxs:col-end-7",
             "xs:row-start-2 xs:col-end-4",
             "xl:relative xl:translate-x-1/4 xl:top-0 xl:left-[calc(100%-calc(20vw+18rem))]"
           )}
@@ -24,7 +25,8 @@ const FirstSection = () => {
         </div>
         <div
           className={clsx(
-            "col-start-2 col-end-8 row-start-1",
+            "col-start-1 col-end-[-1] row-start-1",
+            "xxs:col-start-2 xxs:col-end-8",
             "xs:col-start-3 xs:row-start-1 xs:col-end-6",
             "xl:relative xl:translate-x-1/3 xl:top-0 xl:left-[calc(100%-calc(20vw+15rem))]"
           )}

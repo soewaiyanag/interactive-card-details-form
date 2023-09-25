@@ -8,7 +8,7 @@ import ConfirmBtn from "components/CreditCardForm/ConfirmBtn";
 const SecondSection = () => {
   return (
     <div className="xl:max-w-md self-center">
-      <form className="mt-32 px-5 flex flex-col xl:mt-0">
+      <form className="mt-12 sm:mt-24 md:mt-32 px-5 flex flex-col xl:mt-0">
         <Label htmlFor="card_holder">cardholder name</Label>
         <CardHolderInput placeholderName="Jane Appleseed" />
         <Label htmlFor={"card_number"}>card number</Label>
