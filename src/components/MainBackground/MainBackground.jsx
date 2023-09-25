@@ -9,7 +9,7 @@ const MainBackground = () => {
       <source media="(min-width: 1280px)" srcSet={bg_main_desktop} />
       <img
         src={bg_main_desktop}
-        className="w-screen h-64 xs:h-72 xl:w-[calc(20vw+10rem)] xl:min-h-screen"
+        className="w-screen h-64 xs:h-72 xl:w-[calc(30vw+3.5rem)] xl:min-h-screen"
       />
     </picture>
   );

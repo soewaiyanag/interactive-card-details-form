@@ -11,7 +11,7 @@ const CardNumber = () => {
   return (
     <span
       className={clsx(
-        "font-light text-[1.075rem] xs:text-[1.3rem] sm:text-[1.375rem] text-white",
+        "font-light text-sm xs:text-base sm:text-[1.375rem] text-white",
         "tracking-widest mt-auto mb-5"
       )}
     >
