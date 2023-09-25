@@ -9,7 +9,7 @@ const FirstSection = () => {
         className={clsx(
           "mt-6 grid grid-cols-7 grid-rows-[105px_auto]",
           "xs:grid-cols-5 xs:grid-rows-[127px_auto]",
-          "xl:relative xl:gap-8 xl:content-center xl:min-h-full"
+          "xl:relative xl:left-[calc(100%-calc(20vw+13rem))] xl:w-88 xl:grid-cols-[repeat(3,20px)] xl:grid-rows-[auto_auto] xl:gap-8 xl:content-center xl:min-h-full"
         )}
       >
         <div
@@ -18,7 +18,7 @@ const FirstSection = () => {
             "col-start-1 col-end-[-1] row-start-2",
             "xxs:col-start-1 xxs:col-end-7",
             "xs:row-start-2 xs:col-end-4",
-            "xl:relative xl:translate-x-1/4 xl:top-0 xl:left-[calc(100%-calc(20vw+18rem))]"
+            "xl:col-start-1 xl:row-start-1"
           )}
         >
           <CreditCardFront />
@@ -28,7 +28,7 @@ const FirstSection = () => {
             "col-start-1 col-end-[-1] row-start-1",
             "xxs:col-start-2 xxs:col-end-8",
             "xs:col-start-3 xs:row-start-1 xs:col-end-6",
-            "xl:relative xl:translate-x-1/3 xl:top-0 xl:left-[calc(100%-calc(20vw+15rem))]"
+            "xl:row-start-2"
           )}
         >
           <CreditCardBack />
