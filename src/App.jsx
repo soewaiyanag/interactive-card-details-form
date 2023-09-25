@@ -10,7 +10,7 @@ export default function App() {
       <div
         className={clsx(
           "grid grid-rows-[auto_1fr] sm:container xl:container-fluid mx-auto px-4",
-          "xl:grid-cols-2 xl:gap-4 xl:min-h-screen xl:grid-rows-none"
+          "xl:grid-cols-2 xl:gap-4 xl:min-h-screen xl:grid-rows-none xl:-mt-8"
         )}
       >
         <FirstSection />
