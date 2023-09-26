@@ -2,16 +2,12 @@ import NumberInput from "components/CreditCardForm/NumberInput";
 import { update } from "./yearSlice";
 
 const YearInput = () => {
-  const min = 0;
-  const max = 99;
-
   return (
     <NumberInput
-      min={min}
-      max={max}
       placeholder="YY"
       name="year"
       id="yearInput"
+      maxLength="2"
       action={update}
     />
   );

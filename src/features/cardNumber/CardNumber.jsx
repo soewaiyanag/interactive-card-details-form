@@ -1,13 +1,12 @@
 import { useSelector } from "react-redux";
 import clsx from "clsx";
-
-import formatNum from "functions/formatNum";
+import formatCardNumber from "functions/formatCardNumber";
 
 const allZero = "0".repeat(16);
 
 const CardNumber = () => {
   const number = useSelector((state) => state.cardNumber.value);
-  const formattedNumber = formatNum(number || allZero);
+  const formattedNumber = formatCardNumber(number || allZero);
   return (
     <span
       className={clsx(

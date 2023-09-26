@@ -1,4 +1,4 @@
-function formatNum(value) {
+function formatCardNumber(value) {
   try {
     return value.match(/.{1,4}/g).join(" ");
   } catch (TypeError) {
@@ -6,4 +6,4 @@ function formatNum(value) {
   }
 }
 
-export default formatNum;
+export default formatCardNumber;

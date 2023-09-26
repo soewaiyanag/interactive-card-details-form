@@ -2,16 +2,12 @@ import NumberInput from "components/CreditCardForm/NumberInput";
 import { update } from "./monthSlice";
 
 const MonthInput = () => {
-  const min = 0;
-  const max = 12;
-
   return (
     <NumberInput
-      min={min}
-      max={max}
       placeholder="MM"
       name="month"
       id="monthInput"
+      maxLength="2"
       action={update}
     />
   );
