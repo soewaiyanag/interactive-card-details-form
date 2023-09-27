@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useRef } from "react";
-import clamp from "functions/clamp";
+import formatNumber from "functions/formatNumber";
 
 const NumberInput = ({ id, action, name, placeholder, maxLength }) => {
   const dispatch = useDispatch();

@@ -1,7 +1,7 @@
 const ConfirmBtn = () => {
   return (
     <button
-      className="mt-4 block p-2 rounded-md bg-very-dark-violet text-white"
+      className="block w-full mx-auto py-2.5 rounded-md bg-very-dark-violet text-white text-sm"
       type="button"
     >
       Confirm

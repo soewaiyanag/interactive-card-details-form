@@ -1,6 +1,7 @@
-import FirstSection from "@/components/Sections/FirstSection";
-import SecondSection from "@/components/Sections/SecondSection";
-import MainBackground from "@/components/MainBackground/MainBackground";
+import FirstSection from "./components/Sections/FirstSection";
+import SecondSection from "./components/Sections/SecondSection";
+import MainBackground from "./components/MainBackground/MainBackground";
+import SuccessSection from "./components/SuccessSection";
 import clsx from "clsx";
 
 export default function App() {
@@ -14,7 +15,8 @@ export default function App() {
         )}
       >
         <FirstSection />
-        <SecondSection />
+        {/* <SecondSection /> */}
+        <SuccessSection />
       </div>
     </div>
   );
